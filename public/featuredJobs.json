@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "Job-101",
     "company_logo": "../src/assets/Logo/google-1-1 1-1.png",
     "job_title": "Software Engineer",
     "company_name": "Google LLC",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "Job-102",
     "company_logo": "../src/assets/Logo/netflix-4 1.png",
     "job_title": "Marketing Manager",
     "company_name": "Netflix",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": 3,
+    "id": "Job-103",
     "company_logo": "../src/assets/Logo/quantam.png",
     "job_title": "Graphic Designer",
     "company_name": "Quantam Black",
@@ -55,7 +55,7 @@
   },
 
   {
-    "id": 4,
+    "id": "Job-104",
     "company_logo": "../src/assets/Logo/tesla-9 1.png",
     "job_title": "Sales Representative",
     "company_name": "Tesla",
@@ -74,7 +74,7 @@
   },
 
   {
-    "id": 5,
+    "id": "Job-105",
     "company_logo": "../src/assets/Logo/bellaVista.jpg",
     "job_title": "Product Designer",
     "company_name": "Bella Vista",
@@ -92,7 +92,7 @@
     }
   },
   {
-    "id": 6,
+    "id": "Job-106",
     "company_logo": "../src/assets/Logo/Ankona.jpg",
     "job_title": "Content Writer",
     "company_name": "Ankona Co.",

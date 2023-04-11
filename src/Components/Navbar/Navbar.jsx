@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Home", href: "/", id: 1 },
   { name: "Statistics", href: "/Statistics", id: 2 },
-  { name: "Applied Jobs", href: "/Filter", id: 3 },
+  { name: "Applied Jobs", href: "/appliedJobs", id: 3 },
   { name: "Blog", href: "/Blog", id: 4 },
 ];
 

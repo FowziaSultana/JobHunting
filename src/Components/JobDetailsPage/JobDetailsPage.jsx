@@ -13,9 +13,10 @@ import Frame1 from "../../assets/Icons/Frame1.png";
 import Frame2 from "../../assets/Icons/Frame2.png";
 import Frame3 from "../../assets/Icons/Frame3.png";
 import Frame4 from "../../assets/Icons/Frame4.png";
+import { addToDb } from "../Utilities/fakedb";
 
 const JobDetailsPage = () => {
-  const handleApplyBtn = (id) => alert(id);
+  const handleApplyBtn = (id) => addToDb(id);
   const { singleData } = useLoaderData();
 
   let {
