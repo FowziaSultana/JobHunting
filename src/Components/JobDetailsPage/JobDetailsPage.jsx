@@ -30,7 +30,10 @@ const JobDetailsPage = () => {
   return (
     <div>
       <JobDetailsHeader></JobDetailsHeader>
-      <h1>{job_title}</h1>
+      <div className="container grid grid-cols-3 h-96 my-16 md:my-36">
+        <div className="col-span-2 bg-slate-800 "></div>
+        <div className="bg-orange-700"></div>
+      </div>
     </div>
   );
 };
