@@ -20,8 +20,9 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
     experiences,
     contact_information,
   } = singleAppliedJob;
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 lg: gap-5  p-4 content-center border-2 border-purple-400">
+    <div className="grid grid-cols-1 lg:grid-cols-5 lg: gap-5  p-4 content-center border-2 border-zinc-200 rounded-lg">
       <div className="col-span-1 place-self-center">
         <img className="" src={company_logo}></img>
       </div>
@@ -48,7 +49,11 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
           </div>
         </div>
       </div>
-      <button type="button" className="btn-details  place-self-center">
+
+      <button
+        onClick={() => console.log("hello")}
+        className="btn-details  place-self-center"
+      >
         <Link to={`/jobDetails/${id}`}> View Details </Link>
       </button>
     </div>

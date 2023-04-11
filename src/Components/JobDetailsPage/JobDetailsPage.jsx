@@ -62,7 +62,7 @@ const JobDetailsPage = () => {
         <div className="deatils2">
           <div className="p-7 bg-purple-50 mb-6">
             <span className="font-bold text-xl">Job Details </span>
-            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
             <div className=" flex items-center gap-2 mb-4">
               <span>
@@ -78,7 +78,7 @@ const JobDetailsPage = () => {
               <span className="font-bold"> Job Title:</span> {job_title}
             </div>
             <span className="font-bold text-xl">Contact Information</span>
-            <hr class="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <div className=" flex items-center gap-2 mb-4">
               <span>
                 <img className="job_icons" src={Frame2}></img>
