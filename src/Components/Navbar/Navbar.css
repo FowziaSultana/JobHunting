@@ -1,6 +1,12 @@
 .navLink {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #757575;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.navLink:hover {
+  color: white;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
 }

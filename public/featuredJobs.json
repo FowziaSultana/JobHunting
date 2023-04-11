@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "company_logo": "../src/assets/Logo/google-1-1 1-1.png",
+    "job_title": "Software Engineer",
+    "company_name": "Google LLC",
+    "remote_or_onsite": "Remote",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We're seeking a highly motivated software engineer to join our team.",
+    "job_responsibility": "Develop and maintain software applications, collaborate with cross-functional teams, and deliver high-quality code.",
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "2+ years of professional software engineering experience",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "../src/assets/Logo/netflix-4 1.png",
+    "job_title": "Marketing Manager",
+    "company_name": "Netflix",
+    "remote_or_onsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We're looking for a creative and results-driven Marketing Manager to join our team.",
+    "job_responsibility": "Develop and execute marketing campaigns, manage social media accounts, and analyze campaign performance.",
+    "educational_requirements": "Bachelor's degree in Marketing, Business Administration or related field",
+    "experiences": "5+ years of experience in marketing, with a track record of success",
+    "contact_information": {
+      "phone": "111-222-3333",
+      "email": "hr@acmeinc.com"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "../src/assets/Logo/quantam.png",
+    "job_title": "Graphic Designer",
+    "company_name": "Quantam Black",
+    "remote_or_onsite": "Onsite",
+    "location": "Seattle, WA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "We're seeking a creative and talented Graphic Designer to join our team.",
+    "job_responsibility": "Create designs for print and digital media, collaborate with clients and colleagues, and stay up-to-date with design trends.",
+    "educational_requirements": "Bachelor's or Master's degree in Graphic Design or related field",
+    "experiences": "2+ years of experience in graphic design",
+    "contact_information": {
+      "phone": "777-888-9999",
+      "email": "hr@designco.com"
+    }
+  },
+
+  {
+    "id": 4,
+    "company_logo": "../src/assets/Logo/tesla-9 1.png",
+    "job_title": "Sales Representative",
+    "company_name": "Tesla",
+    "remote_or_onsite": "Onsite",
+    "location": "Chicago, IL",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$20 - $30 per hour",
+    "job_description": "We're looking for a motivated and outgoing Sales Representative to join our team.",
+    "job_responsibility": "Cold-call potential customers, handle customer inquiries, and maintain accurate sales records.",
+    "educational_requirements": "High school diploma or equivalent",
+    "experiences": "1+ years of sales experience",
+    "contact_information": {
+      "phone": "888-999-0000",
+      "email": "sales@techsolutionsllc.com"
+    }
+  },
+
+  {
+    "id": 5,
+    "company_logo": "../src/assets/Logo/bellaVista.jpg",
+    "job_title": "Product Designer",
+    "company_name": "Bella Vista",
+    "remote_or_onsite": "Remote",
+    "location": "Los Angeles, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$90,000 - $110,000",
+    "job_description": "We're seeking a talented and passionate Product Designer to join our team.",
+    "job_responsibility": "Create beautiful and intuitive product designs, collaborate with product managers and developers, and conduct user research.",
+    "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Human-Computer Interaction or related field",
+    "experiences": "3+ years of experience in product design",
+    "contact_information": {
+      "phone": "555-666-7777",
+      "email": "careers@innovateco.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "../src/assets/Logo/Ankona.jpg",
+    "job_title": "Content Writer",
+    "company_name": "Ankona Co.",
+    "remote_or_onsite": "Remote",
+    "location": "Portland, OR",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$25 - $40 per hour",
+    "job_description": "We're looking for a skilled and versatile Content Writer to join our team.",
+    "job_responsibility": "Write blog posts, product descriptions, and other content for various clients, and collaborate with editors and other writers.",
+    "educational_requirements": "Bachelor's degree in Journalism, English or related field",
+    "experiences": "2+ years of experience in content writing",
+    "contact_information": {
+      "phone": "444-555-6666",
+      "email": "careers@contentco.com"
+    }
+  }
+]

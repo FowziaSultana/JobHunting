@@ -1,0 +1,35 @@
+.singleFeaturedJob {
+  padding: 38px;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+.workSite {
+  box-sizing: border-box;
+  padding: 9px 19px;
+  width: 109px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #7e90fe;
+  color: #7e90fe;
+  font-weight: 800;
+}
+.workSite:hover {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  color: white;
+}
+
+.btn-details {
+  width: 140px;
+  height: 38px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 4px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+.btn-details:hover {
+  border: 1px solid #7e90fe;
+  color: #7e90fe;
+  background: white;
+}
