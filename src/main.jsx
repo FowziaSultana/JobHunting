@@ -10,6 +10,7 @@ import Blog from "./Components/Blog/Blog";
 import Statistics from "./Components/Statistics/Statistics";
 import Error from "./Components/Error/Error";
 import JobDetailsPage from "./Components/JobDetailsPage/JobDetailsPage";
+import AppliedJobsPage from "./Components/AppliedJobsPage/AppliedJobsPage";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
           let singleData = data.find((job) => job.id == params.params.id);
           return { singleData };
         },
+      },
+      {
+        path: "/appliedJobs",
+        element: <AppliedJobsPage></AppliedJobsPage>,
       },
     ],
   },

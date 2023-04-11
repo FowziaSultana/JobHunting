@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./JobDetailsPage.css";
+import SecondaryHeader from "../SecondaryHeader/SecondaryHeader";
 import {
   Outlet,
   useLoaderData,
   useParams,
   useNavigation,
+  Link,
 } from "react-router-dom";
 import Frame from "../../assets/Icons/Frame.png";
 import Frame1 from "../../assets/Icons/Frame1.png";
@@ -12,14 +14,12 @@ import Frame2 from "../../assets/Icons/Frame2.png";
 import Frame3 from "../../assets/Icons/Frame3.png";
 import Frame4 from "../../assets/Icons/Frame4.png";
 
-import JobDetailsHeader from "../JobDetailsHeader/JobDetailsHeader";
-
 const JobDetailsPage = () => {
-  const { id } = useParams();
-
+  const handleApplyBtn = (id) => alert(id);
   const { singleData } = useLoaderData();
 
   let {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -36,8 +36,8 @@ const JobDetailsPage = () => {
 
   return (
     <div>
-      <JobDetailsHeader></JobDetailsHeader>
-      <div className="container grid grid-cols-3 h-96 my-16 md:my-36">
+      <SecondaryHeader name="Job Details"></SecondaryHeader>
+      <div className="container grid grid-cols-1 lg:grid-cols-3 h-96 my-16 md:my-36 p-4 md:p-10 gap-3 lg:gap-6">
         <div className="details1 col-span-2 ">
           <div className="text-base mb-6">
             <span className="font-bold">Job Details: </span>
@@ -67,13 +67,14 @@ const JobDetailsPage = () => {
               <span>
                 <img className="job_icons" src={Frame}></img>
               </span>
-              Salary:{salary} (per Year)
+              <span className="font-bold">Salary:</span>
+              {salary} (per Year)
             </div>
             <div className="flex items-center gap-2 mb-8">
               <span>
                 <img className="job_icons" src={Frame1}></img>
               </span>
-              {job_title}
+              <span className="font-bold"> Job Title:</span> {job_title}
             </div>
             <span className="font-bold text-xl">Contact Information</span>
             <hr class="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700"></hr>
@@ -81,22 +82,33 @@ const JobDetailsPage = () => {
               <span>
                 <img className="job_icons" src={Frame2}></img>
               </span>
-              Phone:{contact_information.phone}
+              <span className="font-bold">Phone:</span>
+              {contact_information.phone}
             </div>
             <div className=" flex items-center gap-2 mb-4">
               <span>
                 <img className="job_icons" src={Frame3}></img>
               </span>
-              Email:{contact_information.email}
+              <span className="font-bold"> Email:</span>
+              {contact_information.email}
             </div>
             <div className=" flex items-center gap-2 mb-4">
               <span>
                 <img className="job_icons" src={Frame4}></img>
               </span>
-              Address:{salary}
+              <span className="font-bold"> Address:</span>
+              {location}
             </div>
           </div>
-          <button className=" btn-primary applyNow ">Apply Now</button>
+          <Link to="/appliedJobs">
+            {" "}
+            <button
+              className=" btn-primary applyNow"
+              onClick={() => handleApplyBtn(id)}
+            >
+              Apply Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
