@@ -1,20 +1,47 @@
 import React, { useEffect, useState } from "react";
 import "./FeaturedJobs.css";
 import SingleFeaturedJob from "../SingleFeaturedJob/SingleFeaturedJob";
+import { data } from "autoprefixer";
 const FeaturedJobs = () => {
+  let allJobs = [];
+  let myData = [];
   const [featuredJobList, setFeaturedJobList] = useState([]);
+  const [featuredJobListTemp, setFeaturedJobListTemp] = useState([]);
   const [limit, setLimit] = useState(false);
 
   useEffect(() => {
     fetch("featuredJobs.json")
       .then((res) => res.json())
-      .then((data) => setFeaturedJobList(data));
+      .then((data) => {
+        loadDataRandom(data);
+        setFeaturedJobList(data);
+      });
   }, []);
+
+  const loadDataRandom = (data) => {
+    allJobs = [...data];
+    const selectedElements = selectRandomElements(allJobs, 4);
+    const newArray1 = [...selectedElements];
+    setFeaturedJobListTemp(newArray1);
+    console.log(limit);
+    return newArray1;
+  };
+  function selectRandomElements(array, numElements) {
+    const selectedElements = [];
+    for (let i = 0; i < numElements; i++) {
+      const randomIndex = Math.floor(Math.random() * array.length);
+      selectedElements.push(array[randomIndex]);
+      array.splice(randomIndex, 1);
+    }
+    return selectedElements;
+  }
   let handleSeeMore = () => {
-    return setLimit(true);
+    setLimit(true);
+    setFeaturedJobListTemp(featuredJobList);
   };
   let handleSeeLess = () => {
-    return setLimit(false);
+    setLimit(false);
+    loadDataRandom(featuredJobListTemp);
   };
 
   return (
@@ -27,15 +54,9 @@ const FeaturedJobs = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
-        {limit
-          ? featuredJobList.map((aJob) => (
-              <SingleFeaturedJob aJob={aJob}></SingleFeaturedJob>
-            ))
-          : featuredJobList
-              .slice(0, 4)
-              .map((aJob) => (
-                <SingleFeaturedJob aJob={aJob}></SingleFeaturedJob>
-              ))}
+        {featuredJobListTemp.map((aJob) => (
+          <SingleFeaturedJob aJob={aJob}></SingleFeaturedJob>
+        ))}
       </div>
       <div className="text-center mt-10 mb-28">
         {!limit ? (

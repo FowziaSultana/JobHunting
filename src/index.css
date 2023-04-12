@@ -8,7 +8,6 @@ body {
 .btn-primary {
   width: 150px;
   height: 50px;
-  left: 1430px;
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
   border-radius: 8px;
   color: white;
