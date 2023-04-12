@@ -1,3 +1,30 @@
 # My React Project
 
-It is a simple project where you can see some of jobs..You can apply to those jobs .You can only apply to a job once . In the applied job page you can see all the jobs you have applied. You also can filter those jobs by the type of the job whether it is remote or onsite. There's a button view details. By clicking on the button you can see all the details of the job. There are other two pages. In one page there is a chart in another page there are some questions and answers
+# Project Features
+
+## Job Listings Page:
+
+- Users can view available jobs
+- Users can apply to a job
+- Users can only apply once to a job
+- Users can filter jobs by job type (remote or onsite)
+
+## Applied Jobs Page:
+
+- Users can view all the jobs they have applied to
+- Users can filter applied jobs by job type (remote or onsite)
+- Users can view job details for each applied job
+
+## Job Details Page:
+
+- Users can view all the details of a job
+
+## Chart Page:
+
+- Users can view a chart
+
+## Q&A Page:
+
+- Users can view questions and answers
+
+### Live website link: https://capable-sfogliatella-9201b9.netlify.app/
