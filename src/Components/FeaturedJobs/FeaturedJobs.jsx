@@ -23,7 +23,6 @@ const FeaturedJobs = () => {
     const selectedElements = selectRandomElements(allJobs, 4);
     const newArray1 = [...selectedElements];
     setFeaturedJobListTemp(newArray1);
-    console.log(limit);
     return newArray1;
   };
   function selectRandomElements(array, numElements) {

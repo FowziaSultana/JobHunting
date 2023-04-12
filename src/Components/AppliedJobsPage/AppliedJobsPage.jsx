@@ -6,6 +6,8 @@ import SingleAppliedJob from "../SingleAppliedJob/SingleAppliedJob";
 
 const AppliedJobsPage = () => {
   const [jobCartList, setJobCartList] = useState([]);
+  const [tempCartList, setTempCartList] = useState([]);
+
   useEffect(() => {
     fetch("featuredJobs.json")
       .then((res) => res.json())
@@ -24,14 +26,28 @@ const AppliedJobsPage = () => {
     }
     if (newCart.length != 0) {
       setJobCartList(newCart);
+      setTempCartList(newCart);
     }
   };
 
   const [selectedOption, setSelectedOption] = useState("none");
 
   function handleSelectChange(event) {
+    let chosenCart = [];
     setSelectedOption(event.target.value);
-    console.log(`Selected option: ${event.target.value}`);
+    let choices = event.target.value;
+
+    if (choices === "Remote") {
+      chosenCart = jobCartList.filter(
+        (saj) => saj.remote_or_onsite === "Remote"
+      );
+      setTempCartList(chosenCart);
+    } else if (choices === "Onsite") {
+      chosenCart = jobCartList.filter(
+        (saj) => saj.remote_or_onsite === "Onsite"
+      );
+      setTempCartList(chosenCart);
+    } else setTempCartList(jobCartList);
   }
   return (
     <div>
@@ -46,19 +62,25 @@ const AppliedJobsPage = () => {
             <option value="none" disabled hidden>
               Filter
             </option>
-            <option value="remote">Remote</option>
-            <option value="onsite">Onsite</option>
+            <option value="Remote">Remote</option>
+            <option value="Onsite">Onsite</option>
           </select>
         </div>
         <div className="grid grid-cols-1 gap-3">
-          {jobCartList.length != 0 ? (
-            jobCartList.map((singleAppliedJob) => (
+          {tempCartList.length != 0 ? (
+            tempCartList.map((singleAppliedJob) => (
               <SingleAppliedJob
                 singleAppliedJob={singleAppliedJob}
+                key={singleAppliedJob.id}
               ></SingleAppliedJob>
             ))
           ) : (
-            <div>No data here </div>
+            <div className="text-center">
+              <h1 className="text-5xl text-purple-400">
+                {" "}
+                You Have Not Applied In Any Job Yet{" "}
+              </h1>{" "}
+            </div>
           )}
         </div>
       </div>
