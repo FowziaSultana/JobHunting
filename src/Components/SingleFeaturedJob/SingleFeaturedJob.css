@@ -27,6 +27,7 @@
   color: white;
   font-size: 17px;
   font-weight: 500;
+  padding: 10px 15px;
 }
 .btn-details:hover {
   border: 1px solid #7e90fe;

@@ -100,16 +100,13 @@ const JobDetailsPage = () => {
               <span className="font-bold"> Address:</span>
               {location}
             </div>
-          </div>
-          <Link to="/appliedJobs">
-            {" "}
-            <button
-              className=" btn-primary applyNow"
-              onClick={() => handleApplyBtn(id)}
-            >
-              Apply Now
-            </button>
-          </Link>
+          </div>{" "}
+          <button
+            className=" btn-primary applyNow"
+            onClick={() => handleApplyBtn(id)}
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>

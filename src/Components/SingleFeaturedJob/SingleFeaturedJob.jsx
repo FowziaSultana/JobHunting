@@ -42,9 +42,12 @@ const SingleFeaturedJob = ({ aJob }) => {
           Salary:{salary}
         </div>
       </div>
-      <button type="button" className="btn-details mt-6">
-        <Link to={`/jobDetails/${id}`}> View Details </Link>
-      </button>
+      <div className="mt-4">
+        <Link className="btn-details " to={`/jobDetails/${id}`}>
+          {" "}
+          View Details{" "}
+        </Link>
+      </div>
     </div>
   );
 };

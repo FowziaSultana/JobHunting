@@ -50,12 +50,12 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
         </div>
       </div>
 
-      <button
-        onClick={() => console.log("hello")}
-        className="btn-details  place-self-center"
-      >
-        <Link to={`/jobDetails/${id}`}> View Details </Link>
-      </button>
+      <div className="  place-self-center">
+        <Link to={`/jobDetails/${id}`} className="btn-details">
+          {" "}
+          View Details{" "}
+        </Link>
+      </div>
     </div>
   );
 };

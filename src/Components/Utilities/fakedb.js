@@ -8,6 +8,11 @@ const addToDb = (id) => {
   const quantity = JobCart[id];
   if (!quantity) {
     JobCart[id] = 1;
+    Swal.fire({
+      icon: "success",
+      title: "Well done..",
+      text: "You have applied for this job!",
+    });
   } else {
     Swal.fire({
       icon: "error",
