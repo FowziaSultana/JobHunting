@@ -1,7 +1,7 @@
 [
   {
     "id": "Job-101",
-    "company_logo": "../src/assets/Logo/google-1-1 1-1.png",
+    "company_logo": "../src/assets/All Images/Logo/google-1-1 1-1.png",
     "job_title": "Software Engineer",
     "company_name": "Google LLC",
     "remote_or_onsite": "Remote",
@@ -19,7 +19,7 @@
   },
   {
     "id": "Job-102",
-    "company_logo": "../src/assets/Logo/netflix-4 1.png",
+    "company_logo": "../src/assets/All Images/Logo/netflix-4 1.png",
     "job_title": "Marketing Manager",
     "company_name": "Netflix",
     "remote_or_onsite": "Onsite",
@@ -37,7 +37,7 @@
   },
   {
     "id": "Job-103",
-    "company_logo": "../src/assets/Logo/quantam.png",
+    "company_logo": "../src/assets/All Images/Logo/quantam.png",
     "job_title": "Graphic Designer",
     "company_name": "Quantam Black",
     "remote_or_onsite": "Onsite",
@@ -56,7 +56,7 @@
 
   {
     "id": "Job-104",
-    "company_logo": "../src/assets/Logo/tesla-9 1.png",
+    "company_logo": "../src/assets/All Images/Logo/tesla-9 1.png",
     "job_title": "Sales Representative",
     "company_name": "Tesla",
     "remote_or_onsite": "Onsite",
@@ -75,7 +75,7 @@
 
   {
     "id": "Job-105",
-    "company_logo": "../src/assets/Logo/bellaVista.jpg",
+    "company_logo": "../src/assets/All Images/Logo/bellaVista.jpg",
     "job_title": "Product Designer",
     "company_name": "Bella Vista",
     "remote_or_onsite": "Remote",
@@ -93,7 +93,7 @@
   },
   {
     "id": "Job-106",
-    "company_logo": "../src/assets/Logo/Ankona.jpg",
+    "company_logo": "../src/assets/All Images/Logo/Ankona.jpg",
     "job_title": "Content Writer",
     "company_name": "Ankona Co.",
     "remote_or_onsite": "Remote",

@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "logo": "../src/assets/Icons/engineering.png",
+    "logo": "../src/assets/All Images/engineering.png",
     "name": "Engineering",
     "jobs_available": "1000+"
   },
   {
     "id": 2,
-    "logo": "../src/assets/Icons/stethoscope-solid.png",
+    "logo": "../src/assets/All Images/stethoscope-solid.png",
     "name": "Healthcare",
     "jobs_available": "56"
   },
   {
     "id": 3,
-    "logo": "../src/assets/Icons/IT.png",
+    "logo": "../src/assets/All Images/IT.png",
     "name": "IT",
     "jobs_available": "150+"
   },
   {
     "id": 4,
-    "logo": "../src/assets/Icons/social-media 1.png",
+    "logo": "../src/assets/All Images/social-media 1.png",
     "name": "Social Media Marketing",
     "jobs_available": "200"
   }

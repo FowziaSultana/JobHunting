@@ -1,5 +1,5 @@
 import React from "react";
-import page from "../../assets/Logo/CodePen-404-Page.png";
+import page from "../../assets/All Images/Logo/CodePen-404-Page.png";
 import "./Error.css";
 const Error = () => {
   return (

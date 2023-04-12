@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./FeaturedJobs.css";
 import SingleFeaturedJob from "../SingleFeaturedJob/SingleFeaturedJob";
-import { data } from "autoprefixer";
 const FeaturedJobs = () => {
   let allJobs = [];
   let myData = [];
